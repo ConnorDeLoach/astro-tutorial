@@ -1,5 +1,6 @@
 ---
-
+import '../styles/global.css';
+const pageTitle = "Blog";
 ---
 
 <html lang="en">
@@ -8,14 +9,14 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>My Atro Site</title>
+		<title>{pageTitle}</title>
 	</head>
     <body>
         <a href="/">Home</a>
         <a href="/about/">About</a>
         <a href="/blog/">Blog</a>
 
-        <h1>About My Blog</h1>
+        <h1>About My {pageTitle}</h1>
         <h2>Welcome to My New Blog!</h2>
         
         <h1>Blog Title</h1>
@@ -26,6 +27,12 @@
         <p>Welcome to my blog! Here, you'll find a collection of my thoughts, experiences, and updates as I navigate through various topics of interest.</p>
         
         <p>This blog will be regularly updated with new content, so be sure to check back often and follow along on this exciting journey!</p>
+
+        <ul>
+            <li><a href="/posts/post-1/">Post 1</a></li>
+            <li><a href="/posts/post-2/">Post 2</a></li>
+            <li><a href="/posts/post-3/">Post 3</a></li>
+        </ul>
         
       </body>
 </html>
